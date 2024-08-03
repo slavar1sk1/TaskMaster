@@ -1,0 +1,243 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 150px;
+  margin-left: 90px;
+  margin-top: -15px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.header-right {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Выравнивание элементов по вертикали */
+  margin-right: 260px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.nav {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.nav:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.line {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(196, 196, 196);
+  margin: 0 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.registration-first {
+  color: white;
+  border-radius: 8px;
+  background: rgb(230, 71, 71);
+  text-decoration: none;
+  margin-left: 23px;
+  font-size: 18px;
+  padding: 5px 10px;
+  font-weight: bold;
+  height: 28px;
+  width: 140px;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-top: 3px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.registration-first:hover {
+  background-color: rgba(241, 12, 12, 0.9);
+  border-radius: 8px;
+}
+
+.main {
+  margin-top: 50px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.pricing-header {
+  margin-bottom: 50px;
+}
+
+.pricing-header .display-4 {
+  font-size: 40px;
+  color: #e64747;
+  margin-bottom: 10px;
+}
+
+.pricing-header .fs-5 {
+  font-size: 18px;
+  color: #000;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #e64747;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  height: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: #e64747;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 36px;
+  color: #e64747;
+  margin: 0 0 20px 0;
+}
+
+.card-title small {
+  font-size: 18px;
+  color: #000;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.card-body ul li {
+  margin-bottom: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header img {
+    height: 100px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .registration-first {
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .main {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .pricing-header .display-4 {
+    font-size: 30px;
+  }
+
+  .pricing-header .fs-5 {
+    font-size: 16px;
+  }
+}
